@@ -4,14 +4,11 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 
-import java.util.List;
 @Data
 @Builder
 @AllArgsConstructor
-public class Order {
+public class Product {
     private int id;
-    private String date;
-    private int cost;
-    private List<Product> products;
-
+    private String name;
+    private double cost;
 }
