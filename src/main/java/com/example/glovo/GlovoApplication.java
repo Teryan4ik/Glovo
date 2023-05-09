@@ -7,4 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class GlovoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(GlovoApplication.class, args
+        SpringApplication.run(GlovoApplication.class, args);
+    }
+
+}
