@@ -5,16 +5,21 @@ import com.example.glovo.model.Product;
 
 public class ProductConvertor {
     public static Product productEntityToProduct(ProductEntity productEntity) {
-        return Product.builder().id(productEntity.getId())
+        return Product
+                .builder()
+                .id(productEntity.getId())
                 .name(productEntity.getName())
                 .cost(productEntity.getCost())
                 .build();
     }
 
     public static ProductEntity productToProductEntity(Product product) {
-        return ProductEntity.builder().id(product.getId())
+        return ProductEntity
+                .builder()
+                .id(product.getId())
                 .name(product.getName())
                 .cost(product.getCost())
+                .order(product.getId())
                 .build();
     }
 }
